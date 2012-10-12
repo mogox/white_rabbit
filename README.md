@@ -2,7 +2,7 @@
 
 ## Description
 
-Ruby library for This library let's you set a date and a time of a datetime attribute in from a rails model to allow you have separate UI elements for date and time.
+Ruby library for letting you set a date and a time of a datetime attribute in from a rails model to allow you have separate UI elements for date and time.
 
 ## Installation
 
