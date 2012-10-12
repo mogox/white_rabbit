@@ -38,21 +38,26 @@ The spec contains this example:
     end
 
 Then you can do:
+
     test_class = TestClass.new
     test_class.start_date = 1.day.ago
     test_class.start_time = 1.hour.ago
 
 When both, date and time, are set and can be parsed via Timeliness you get a valid object:
+
     test_class.start.class # will print "ActiveSupport::TimeWithZone"
 
 However, the date and time parameters will be a string, since it's easier to use in your views.
+
     test_class.start_date.class # will print "String" in the default us_format
     test_class.start_time.class # will print "String"
 
 To add more date/time formats, first define your date or time format:
+
     Time::DATE_FORMATS[:long_date] = "%B %d, %Y"
 
 Then define the parse format for Validates_Timeliness:
+
     ValidatesTimeliness.parser.add_formats(:datetime, 'mmm d, yyyy h:nnampm')
 
 More about ValidatesTimeliness: http://github.com/adzap/validates_timeliness
