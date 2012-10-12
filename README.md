@@ -74,3 +74,7 @@ More about ValidatesTimeliness: http://github.com/adzap/validates_timeliness
 ## Running the Specs
 
     rspec spec/
+
+## Authors
+  People who have contributed to the initial version:
+  @kasima, @wonnage, @chriswfx, @mogox
